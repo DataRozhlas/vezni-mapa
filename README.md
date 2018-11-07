@@ -3,7 +3,7 @@
 > Já jsem šablona, co generuje střeva pro snowfall články. V téhle vylepšené verzi pro Node.js taky automaticky minifikuju skripty a proháním je přes Babel.
 
 ## Předpoklady
-Je třeba [Node.js](https://nodejs.org/en/). Po naklonování builderu (viz níže) je nutno spusit příkaz `node install` (nebo jen `node i`), který nainstaluje vše potřebné.
+Je třeba [Node.js](https://nodejs.org/en/). Po naklonování builderu (viz níže) je nutno spusit příkaz `npm install` (nebo jen `npm i`), který nainstaluje vše potřebné.
 
 ## Nový článek
 
@@ -70,7 +70,7 @@ Pokud používáte defaultní úzký sloupec a chcete, aby byla nějaká vizuali
 ## Buildování
 Celý článek buildnete příkazem
 ```bash
-node run build
+npm run build
 ```
 
 Build vytvoří `output.html`, jehož obsah následně vrazíte do hlavní položky ve snowfall šabloně. Také vytvoří náhledový `index.html` pro kontrolu. Pokud ho kopírujete a zobrazujete z jiné složky, je spolu s ním nutné zkopírovat i složky `fonts` a `wrapper_files`.
