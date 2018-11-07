@@ -3,8 +3,8 @@ perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří 
 published: "21. dubna 2018"
 coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
 coverimg_note: "Foto <a href='#'>ČTK</a>"
-styles: ["bmxabc"]
-libraries: [jquery, datatables, "https://code.jquery.com/jquery-3.3.1.min.js"] #jquery, d3, d3v5, d3csv, highcharts, datatables
+styles: []
+libraries: [jquery, datatables] #jquery, d3, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
 <left>
