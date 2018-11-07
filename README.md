@@ -75,6 +75,11 @@ npm run build
 
 Build vytvoří `output.html`, jehož obsah následně vrazíte do hlavní položky ve snowfall šabloně. Také vytvoří náhledový `index.html` pro kontrolu. Pokud ho kopírujete a zobrazujete z jiné složky, je spolu s ním nutné zkopírovat i složky `fonts` a `wrapper_files`.
 
+Pokud kvůli ladění chcete, aby skripty ve výsledném souboru nebyly zminifikované a zošklivené, docílíte toho pomocí 
+```bash
+npm run test
+```
+
 ## Kontrola na serveru
 
 Po pushnutí na GitHub článek najdete na adrese `data.irozhlas.cz/nazev-projektu`.

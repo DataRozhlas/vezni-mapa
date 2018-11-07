@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "node builder.js test",
     "build": "node builder.js"
   },
   "repository": {

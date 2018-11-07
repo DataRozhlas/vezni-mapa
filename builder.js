@@ -51,7 +51,12 @@ let scriptInput = '';
 fs.readdirSync('./js/').forEach(file => {
   scriptInput += fs.readFileSync('./js/' + file, 'utf8');
 });
-scriptInput = '<script>' + UglifyJS.minify(babel.transformSync(scriptInput,{'presets': ['@babel/preset-env']}).code).code + '</script>';
+
+if (process.argv[2] !== "test") {
+    scriptInput = babel.transformSync(scriptInput,{'presets': ['@babel/preset-env']}).code;
+    scriptInput = UglifyJS.minify(scriptInput).code;
+}
+scriptInput = '<script>' + scriptInput + '</script>';
 
 // applying markdown to the body
 body = md(body);
@@ -96,13 +101,12 @@ for (variable of template.match(/{(.*?)}/g)) {
     template = template.replace(variable, header[variable.substring(1,variable.length-1)])
 }
 
-// injecting the JS and finising up
-
+// injecting the JS and finishing up
 template = template + scriptInput;
 
 fs.writeFileSync('./output.html', template);
 
-// writíng a dummy index
+// writing a dummy index
 let wrapper = fs.readFileSync('./templates/wrapper.html','utf8');
 wrapper = wrapper.replace('{content}', template);
 fs.writeFileSync('./index.html', wrapper);

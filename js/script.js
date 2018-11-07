@@ -1,1 +1,2 @@
-// skripty ve složce js/ se zakompliují automaticky
+let ukazkovaFunkce = () => console.log("tohle je ukázková funkce v moderním Javascriptu!");
+ukazkovaFunkce();
