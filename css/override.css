@@ -1,0 +1,15 @@
+li {
+    background: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul, ol {
+    list-style: initial !important;
+    font-size: medium !important;
+    line-height: 1.5 !important;
+}
+
+hr {
+    max-width: none !important;
+}

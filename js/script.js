@@ -1,0 +1,2 @@
+// defaultní kompilace
+import "./targetblank";
