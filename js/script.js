@@ -1,2 +1,1 @@
-// defaultní kompilace
-import "./targetblank";
+// skripty ve složce js/ se zakompliují automaticky

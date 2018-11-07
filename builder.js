@@ -1,10 +1,9 @@
 const fs = require('fs');
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config');
-const compiler = webpack(webpackConfig);
 const md = require('marked');
 const yaml = require('node-yaml').parse;
 const CleanCSS = require('clean-css');
+const babel = require("@babel/core");
+const UglifyJS = require("uglify-js");
 
 // opening the source file
 const sourceParts = fs.readFileSync('./article.md', 'utf8').split('---');
@@ -47,8 +46,15 @@ fs.readdirSync('./css/').forEach(file => {
 });
 header.styles += '<style>' + new CleanCSS().minify(styleInput).styles + '</style>';
 
+// babelfying + uglifying and inlining local JS
+let scriptInput = '';
+fs.readdirSync('./js/').forEach(file => {
+  scriptInput += fs.readFileSync('./js/' + file, 'utf8');
+});
+scriptInput = '<script>' + UglifyJS.minify(babel.transformSync(scriptInput,{'presets': ['@babel/preset-env']}).code).code + '</script>';
+
 // applying markdown to the body
-body = md(body)
+body = md(body);
 
 // replacing pseudotags in the body
 body = body.replace(new RegExp('<wide>', 'g'), '</div><div class="row-main row-main--article">');
@@ -90,20 +96,13 @@ for (variable of template.match(/{(.*?)}/g)) {
     template = template.replace(variable, header[variable.substring(1,variable.length-1)])
 }
 
-// webpack: babel + uglify the scripts
-console.log("Compiling scripts...")
-compiler.run( (err, stats) => {
-    (stats.compilation.errors.length > 0) ? console.log("Error!\n" + stats.compilation.errors) : console.log("OK");
+// injecting the JS and finising up
 
-    const packedScript = fs.readFileSync('dist/script.js', 'utf8');
+template = template + scriptInput;
 
-    template = template + '<script>' + packedScript + '</script>';
+fs.writeFileSync('./output.html', template);
 
-    // write the template
-    fs.writeFileSync('./output.html', template);
-
-    // write a dummy index
-    let wrapper = fs.readFileSync('./templates/wrapper.html','utf8');
-    wrapper = wrapper.replace('{content}', template);
-    fs.writeFileSync('./index.html', wrapper);
-    });
+// writíng a dummy index
+let wrapper = fs.readFileSync('./templates/wrapper.html','utf8');
+wrapper = wrapper.replace('{content}', template);
+fs.writeFileSync('./index.html', wrapper);
