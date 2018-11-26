@@ -81,7 +81,7 @@ if (header.options.includes('noheader')) {
     if (header.options.includes('nopic')) {
         header.mainphoto = '';
     } else {
-        header.mainphoto = '<figure class="b-detail__img"><img src="' + art['coverimg'] + '" width="100%" /><figcaption>' + art['coverimg_note'] + '</figcaption></figure>';
+        header.mainphoto = '<figure class="b-detail__img"><img src="' + header['coverimg'] + '" width="100%" /><figcaption>' + header['coverimg_note'] + '</figcaption></figure>';
     }
 } else {
     template_file = './templates/snowfall.html';
