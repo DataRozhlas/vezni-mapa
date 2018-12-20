@@ -68,17 +68,18 @@ Můžete využívat také postranní boxíky - vkládají se přes pseudotagy `<
 Pokud používáte defaultní úzký sloupec a chcete, aby byla nějaká vizualizace široká, stačí ji uzavřít do pseudotagů `<wide> </wide>`.
 
 ## Buildování
-Celý článek buildnete příkazem
+Když na článku pracujete, pomocí příkazu
+```bash
+npm run watch
+```
+zařídíte aktualizaci náhledového `index.html` pokaždé, když cokoliv upravíte. Není tedy třeba neustále buildovat.
+
+Finální verzi článku (se zmenšenými skripty a styly) buildnete příkazem
 ```bash
 npm run build
 ```
 
 Build vytvoří `output.html`, jehož obsah následně vrazíte do hlavní položky ve snowfall šabloně. Také vytvoří náhledový `index.html` pro kontrolu. Pokud ho kopírujete a zobrazujete z jiné složky, je spolu s ním nutné zkopírovat i složky `fonts` a `wrapper_files`.
-
-Pokud kvůli ladění chcete, aby skripty ve výsledném souboru nebyly zminifikované a zošklivené, docílíte toho pomocí 
-```bash
-npm run test
-```
 
 ## Kontrola na serveru
 
