@@ -1,9 +1,7 @@
-// copy https://code.luasoftware.com/tutorials/hugo/how-to-create-link-with-target-blanks-in-hugo-markdown/
-
-var links = document.getElementsByTagName('a');
-for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-   if (links[i].hostname != window.location.hostname) {
-      links[i].target = '_blank';
-      links[i].rel = 'noopener noreferrer';
-   };
-};
+const links = document.getElementsByTagName("a");
+[...links].forEach((link) => {
+  if (link.hostname !== window.location.hostname) {
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  }
+});
