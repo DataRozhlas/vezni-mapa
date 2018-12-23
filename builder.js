@@ -116,7 +116,7 @@ const build = async (mode) => {
 
   // writing a dummy index
   let wrapper = fs.readFileSync("./templates/wrapper.html", "utf8");
-  wrapper = wrapper.replace("{content}", template);
+  wrapper = wrapper.split("{content}").join(template);
   fs.writeFileSync("./index.html", wrapper);
 
   return "Hotovo!";
