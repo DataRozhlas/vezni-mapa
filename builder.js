@@ -54,9 +54,6 @@ const build = async (mode) => {
   });
   header.styles += `<style>${new CleanCSS().minify(styleInput).styles}</style>`;
 
-  // applying markdown to the body
-  body = md(body);
-
   // replacing pseudotags in the body
   body = body.replace(new RegExp("<wide>", "g"), "</div><div class=\"row-main row-main--article\">");
   body = body.replace(new RegExp("</wide>", "g"), "</div><div class=\"row-main row-main--narrow\">");
@@ -66,6 +63,9 @@ const build = async (mode) => {
 
   body = body.replace(new RegExp("<right>", "g"), "<div class=\"b-inline b-inline--right\"><div class=\"b-inline__wrap\"><div class=\"b-inline__content\"><div class=\"text-sm\">");
   body = body.replace(new RegExp("</right>", "g"), "</div></div></div></div>");
+
+  // applying markdown to the body
+  body = md(body);
 
   header.content = body;
 

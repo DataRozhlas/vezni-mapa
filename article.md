@@ -21,7 +21,7 @@ Naopak v noci se nejvíc lidí se „namačká“ ve Vršovicích, jde o 430 oso
 
 Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský [Institut plánování a rozvoje](http://www.iprpraha.cz/).
 
-<wide>_Pokud vás zajímá, kolik lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte posuvníkem nahoře._</wide>
+<wide><i>Pokud vás zajímá, kolik lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte posuvníkem nahoře.</i></wide>
 
 ## Data na prodej
 <right>
