@@ -13,6 +13,33 @@ const libraryPresets = {
   d3: "https://d3js.org/d3.v3.min.js",
 };
 
+function uvozovky(text) {
+  let isTag = false;
+  let uvozovkyCount = 0;
+  let outText = "";
+  const srcText = text.replace(/&quot;/g, "\"");
+  [...srcText].forEach((letter) => {
+    switch (letter) {
+      case "\"":
+        if (!isTag) {
+          outText += uvozovkyCount % 2 ? "“" : "„";
+          uvozovkyCount += 1;
+        } else {
+          outText += letter;
+        }
+        break;
+      case "<":
+      case ">":
+        isTag = !isTag;
+        outText += letter;
+        break;
+      default:
+        outText += letter;
+    }
+  });
+  return outText;
+}
+
 const build = async (mode) => {
   webpackConfig.mode = mode;
   const compiler = webpack(webpackConfig);
@@ -66,6 +93,7 @@ const build = async (mode) => {
 
   // applying markdown to the body
   body = md(body);
+  body = uvozovky(body);
 
   header.content = body;
 
