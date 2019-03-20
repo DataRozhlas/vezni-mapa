@@ -7,5 +7,5 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 ---
 
 <wide>
-<img src="R/waffle.svg" width="100%">
+<img src="https://data.irozhlas.cz/vezni-mapa/R/waffle.svg" width="100%">
 </wide>
