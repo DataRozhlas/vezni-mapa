@@ -9,6 +9,11 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 <wide>
 <img src="https://data.irozhlas.cz/vezni-mapa/svg/zeny_00.svg" width="100%">
 <div class="slider" id="zeny">
+</div>
+</wide>
 
+<wide>
+<img src="https://data.irozhlas.cz/vezni-mapa/svg/cizinci_00.svg" width="100%">
+<div class="slider" id="cizinci">
 </div>
 </wide>

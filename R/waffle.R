@@ -17,9 +17,9 @@ osoby %>%
   summarise(pocet=n()) %>%
   filter(pohlavi=="muž")
 
-
+# waffle charts pro ženy/muže
 vezni <- c(`ženy\n(7.65 %)` = 1657, `muži` = 20017)
-svglite("../svg/zeny_00.svg", width = 9, height = 9)
+svglite("../svg/zeny_00.svg", width = 9, height = 2)
 graf <- waffle(
   title="Všechny osoby vězněné v České republice: 21 674 vězňů",
   vezni/10, rows = 20, size = 0.25,
@@ -27,7 +27,6 @@ graf <- waffle(
   xlab = "1 čtvereček = 10 lidí")
 print(graf)
 dev.off()
-
 
 c <- 1
 for (i in veznice$veznice) {
@@ -43,7 +42,7 @@ vezni <- as.numeric(vezni$pocet)
 names(vezni) <- c(paste0("ženy\n(", round(vezni[1]/sum(vezni)*100, 2), "%)"), "muži")
 titulek <- paste0("Věznice ", i, ": ", formatC(sum(vezni), big.mark=" "), " vězňů")
 soubor <- paste0("../svg/zeny_", formatC(c, width = 2, format = "d", flag = "0"), ".svg")
-svglite(file = soubor, width = 9, height = 3.57)
+svglite(file = soubor, width = 9, height = 2)
 graf <- waffle(
   vezni,
   title=titulek,
@@ -56,10 +55,6 @@ dev.off()
 c <- c + 1
 }
 
+# waffle chart pro cizince
 
-generujSVG("Praha - Pankrác", 2)
 
-waffle(
-  vezni/20, rows = 20, size = 0.5,
-  colors = c("#F15F36", "#19A0AA"),
-  xlab = "1 čtvereček = 20 osob")

@@ -2,3 +2,11 @@
     color: black;
     font-size: 25px;
 }
+
+.slick-arrow.slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+.slick-arrow.slick-next {
+  right: 30px;
+}
