@@ -17,3 +17,9 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 <div class="slider" id="cizinci">
 </div>
 </wide>
+
+<wide>
+<img src="https://data.irozhlas.cz/vezni-mapa/svg/vazba_00.svg" width="100%">
+<div class="slider" id="vazba">
+</div>
+</wide>
