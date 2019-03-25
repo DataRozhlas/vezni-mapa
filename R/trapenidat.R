@@ -58,14 +58,20 @@ pocvez_okresy <- pocob_okresy %>%
   left_join(pocvazba) %>%
   left_join(pocdete)
 
-pocvez_okresy$pct <- round(pocvez_okresy$pocet/pocvez_okresy$pocobyv*100,2)
-  
 pocvez_okresy %>%
-  select(veznu=pocet, icob, okres, pocobyv, muzi, zeny, muzu, zen, trest, vazba, dete, pct) %>%
+  select(veznu=pocet, icob, okres, pocobyv, muzi, zeny, muzu, zen, trest, vazba, dete) %>%
   mutate(veznu=replace_na(veznu, 0)) %>%
   mutate(muzu=replace_na(muzu, 0)) %>%
   mutate(zen=replace_na(zen, 0)) %>%
   mutate(trest=replace_na(trest, 0)) %>%
   mutate(dete=replace_na(dete, 0)) %>%
   mutate(vazba=replace_na(vazba, 0)) %>%
+  mutate(pct=if_else(pocobyv>0, round(veznu/pocobyv*100,2), 0)) %>%
   write_csv("../data/pocvez_okresy.csv")
+
+pocvez_okresy <- read_csv("../data/pocvez_okresy.csv")
+
+pocvez_okresy %>%
+  filter(veznu<1) %>%
+  arrange(desc(pocobyv))
+
