@@ -1,4 +1,6 @@
-﻿mapboxgl.accessToken = 'pk.eyJ1IjoidG9jaXQiLCJhIjoiY2pzczY0bWh5MWJ3cDN6bzZieGl6ZzB1eSJ9.QuIC52CEfSwa5JI8yNVCtw';
+﻿import "./unveil.js"
+
+mapboxgl.accessToken = 'pk.eyJ1IjoidG9jaXQiLCJhIjoiY2pzczY0bWh5MWJ3cDN6bzZieGl6ZzB1eSJ9.QuIC52CEfSwa5JI8yNVCtw';
 
 
 var map = new mapboxgl.Map({
@@ -69,13 +71,17 @@ map.on('load', function() {
 
 // grafy
 $(document).ready(function(){
-    for (let index = 0; index < 35; index++) {    
-        $( "#zeny" ).append( "<div><img src='https://data.irozhlas.cz/vezni-mapa/svg/zeny_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%'></div>" );
-        $( "#cizinci" ).append( "<div><img src='https://data.irozhlas.cz/vezni-mapa/svg/cizinci_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%'></div>" );
-        $( "#vazba" ).append( "<div><img src='https://data.irozhlas.cz/vezni-mapa/svg/vazba_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%'></div>" );    
+    for (let index = 0; index < 35; index++) {
+        $( "#vazba" ).append( "<div><img src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' data-src='https://data.irozhlas.cz/vezni-mapa/svg/vazba_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%' /></div>" );        
+        $( "#zeny" ).append( "<div><img src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' data-src='https://data.irozhlas.cz/vezni-mapa/svg/zeny_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%' /></div>" );
+        $( "#cizinci" ).append( "<div><img src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' data-src='https://data.irozhlas.cz/vezni-mapa/svg/cizinci_" + ("0" + (index + 1)).slice(-2) + ".svg' width='100%' /></div>" );
     }
     $('.slider').slick({
-        mobileFirst: true,
-        lazyLoad: "ondemand"
+        mobileFirst: true
     });
 });
+
+$(document).ready(function(){
+    $("img").unveil();
+});
+

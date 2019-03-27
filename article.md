@@ -62,7 +62,7 @@ Důležitější podle něj je uvědomit si, že víc než polovina obcí nikoho
 Z deseti a půl milionu obyvatel České republiky je podle dat Vězeňské služby za mřížemi 21 674 lidí, z toho drtivá většina ve výkony trestu, 1766 ve vazbě a 86 v detenci.
 
 <wide>
-<img src="https://data.irozhlas.cz/vezni-mapa/svg/vazba_00.svg" width="100%">
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://data.irozhlas.cz/vezni-mapa/svg/vazba_00.svg" width="100%">
 <div class="slider" id="vazba">
 </div>
 </wide>
@@ -72,7 +72,7 @@ S více než dvěma stovkami uvězněných na 100 tisíc obyvatel se Česko řad
 Podobně jako v zahraničí tvoří i v Česku více než devadesát procent vězeňské populace muži. "Žen ve výkony trestu je mnohem méně. Máme jednu ženskou věznici ve Světlé nad Sázavou, ženy jsou také umístěny ve Velkých Přílepech a v Řepích, to jsou pobočky vazební věznice Praha-Ruzyně. Před dvěma lety jsme potomotevřeli ženskou pobočku věznice Nové Sedlo v Drahonicích," říká mluvčí vězeňské služby Petra Kučerová.
 
 <wide>
-<img src="https://data.irozhlas.cz/vezni-mapa/svg/zeny_00.svg" width="100%">
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://data.irozhlas.cz/vezni-mapa/svg/zeny_00.svg" width="100%">
 <div class="slider" id="zeny">
 </div>
 </wide>
@@ -80,7 +80,7 @@ Podobně jako v zahraničí tvoří i v Česku více než devadesát procent vě
 Více než žen je v českých věznicích cizích státních příslušníků, nejčastěji Slováků, Vietnamců a Ukrajinců, což jsou zároveň tři nejpočetnější menšiny.
 
 <wide>
-<img src="https://data.irozhlas.cz/vezni-mapa/svg/cizinci_00.svg" width="100%">
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://data.irozhlas.cz/vezni-mapa/svg/cizinci_00.svg" width="100%">
 <div class="slider" id="cizinci">
 </div>
 </wide>
