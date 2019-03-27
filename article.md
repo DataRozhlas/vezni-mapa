@@ -106,6 +106,46 @@ Za pět let bude vypadat podobně?
 
 V osciálních vědách je velmi těžké predikovat, ale já si myslím, že za pět let by ta mapa vypadala velmi podobně. Možná by tam bylo méně míst, které se budou výrazně odlišovat od průměrných hodnot, protože kriminalita v Česku a zejména ta majetková v posledních deseti patnácti letech setrvale klesá. Zároveň v Česku dochází ke stárnutí populace. My z dat víme, že pachatelé jsou větišnou muži, větišnou mladšího věku. Když nám čeká populace celkově, klesá nám i populace mužů, kteří jsou potenciáoně na startu kriminální kariéry, takže do budoucna si myslím, žýe jsou ty perspektivy dobré.
 
+Mluvčí vězeňské služby
+
+Především musíme respektovat rozhodnutí soudu, do jakého typu věznice odsouzeného umístí. 
+
+Pak jsou samozřejmě důležitým faktorem ubytovací kapacity. V současné době jsme přeplnění, takže je to také důležitý aspekt.
+
+Pak je to trvalý pobyt, aby se nezpřetrhaly rodinné vazby, pokud je odsouzený má a přijde do výkonu trestu z fungujícího rodinného prostředí, je žádoucí, aby se po výkonu trestu měl kam vrátit, aby měl stabilní rodinné zázemí.
+
+Pak jsou to další věci, jako je například zdravotní stav, dieta, kterou má, protože vaříme spoustu diet a musíme je dodržovat. To je zhruba to nejzákladnější.
+
+O umístění vězňů do jednotlivých věznic rozhoduje dispečer na generálním ředitelství vězeňské služby. není tam komise, rozhoduje pouze dispečer.
+
+Na základě toho, do jakého typu věznice je umístěný, jaký je jeho zdravotní stav.
+
+K místu trvalého pobytu přihlížíme a je to právě z toho důvodu, aby ho jeho rodina, se kterou je v kontaktu, mohla navštěvovat. Víme, že to má na odsouzenéí pozitivní vliv, obzvláště jsou-li tam nějaké vazby s dětmi.
+
+Schválně umístěni do odlehlejších kvůli zpřetrhání vazeb na drogové dealery atp?
+
+V případě, že se prokáže, že odsouzený má ve výkonu trestu snahu páchat trestnou činnost, případně se pousí o útěk, tak je z těchto bezpečnostních důvodů přemístěn do jiné věznice. Je to jeho odpovědnost, porušil podmínky.
+
+Jakou roli hraje obsazenost věznic?
+
+Je to velký problém. Teď máme kapacitu na 104 procentech. Je to samozřejmě faktor, ke kterému je třeba přihlížet. Ale primárně se snažíme, aby odsouzení byli v bližším okolí trvalého pobytu.
+
+Ke změnám místa pobytu dochází, pokud se odsouzený pokusí ve výkonu trestu o další trestnou činnost, o útěk, ale může to být i změna zdravotního stavu.
+
+Pak ho přemístíme do jednoho z našich zdravotních zařízení, buď na Pankrác nebo do Brna. Ale také se můžou přemísťovat krátkodobě. Pokud má proces v jiném kraji, je dočasně umístěn ve věznici, která má nejblíž k místně příslušnému soudu.
+
+Může dotyčný podat žádost?
+
+To se prověřuje, zda je opodstatněná a řeší se to.
+
+Žen ve výkony trestu je mnohem méně než mužů. Máme jednu ženskou věznici ve Světlé nad Sázavou. Pak jsou ženy ve Velkých Přílepech a v Řepích, to jsou pobočky vazební věznice Praha-Ruzyně. Pak je ještě pobočka věznice Nové Sedlo v Drahonicích a tam jsou také ženy.
+
+Máme jednu žesnkou věznici ve Světlé nad Sázavou. Ženy pak máme umístěné v Opavě, ve Velkých Přílepech a v Řepích, pobo 
+
+
+
+
+
 
 
 
