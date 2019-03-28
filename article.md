@@ -1,7 +1,7 @@
 title: "Odkud pochází nejvíc vězňů a jak je na tom vaše obec? Mapa ukazuje ohniska kriminality"
 perex: "Zatímco v okresech Praha-západ, Havlíčkův Brod, Žďár nad Sázavou či Pelhřimov pobývá za mřížemi méně než jeden z každého tisíce obyvatel, na Ústecku, Teplicku, Chomutovsku či Mostecku je ve vězení čtyři až pět lidí z tisíce. V těsném závěsu za nimi následují okresy Ostrava-město, Karviná, Děčín a Bruntál."
 published: "26. března 2019"
-styles: ["https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css"]
+styles: ["https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css","https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"]
 libraries: ["https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js", "https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"] #jquery, d3, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
