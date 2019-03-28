@@ -3,3 +3,4 @@
 *.mbtiles
 node_modules/
 .Rproj.user
+tiles/
