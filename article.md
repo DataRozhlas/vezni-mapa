@@ -1,8 +1,8 @@
 title: "Odkud pochází nejvíc vězňů a jak je na tom vaše obec? Mapa ukazuje ohniska kriminality"
 perex: "Zatímco v okresech Praha-západ, Havlíčkův Brod, Žďár nad Sázavou či Pelhřimov pobývá za mřížemi méně než jeden z každého tisíce obyvatel, na Ústecku, Teplicku, Chomutovsku či Mostecku je ve vězení čtyři až pět lidí z tisíce. V těsném závěsu za nimi následují okresy Ostrava-město, Karviná, Děčín a Bruntál."
 published: "26. března 2019"
-styles: ["https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css", "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.css", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css","https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"]
-libraries: ["https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js", "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.2/mapbox-gl-geocoder.min.js", jquery, "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"] #jquery, d3, highcharts, datatables
+styles: ["https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css"]
+libraries: ["https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js", "https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"] #jquery, d3, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
 
@@ -10,6 +10,12 @@ Ukazují to aktuální [data od Vězeňské služby České republiky](https://g
 
 <wide>
 <h4>Kolik procent obyvatel je ve vězení – v mapě najdete údaje pro každou obec</h4>
+<form action="?" id='frm-geocode'>
+	  <div class="inputs">
+	    <input type="text" id="inp-geocode" placeholder="Zadejte obec či adresu...">
+	    <input type="submit" id="inp-btn" value="Najít">
+	  </div>
+	</form>
 <div id="map"><div class='map-overlay' id='legend'></div></div>
 <div id='pd'><p>Vyberte obec na mapě!</p></div>
 
