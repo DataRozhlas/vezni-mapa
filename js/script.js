@@ -62,7 +62,7 @@ map.on('load', function() {
         map.scrollZoom.enable();
     });
 
-    map.addControl(new mapboxgl.NavigationControl(), "top-left"); // buttonky pro zoom a rotaci
+    map.addControl(new mapboxgl.NavigationControl({showCompass: false}), "top-left"); // buttonky pro zoom a rotaci
 
 });
 
